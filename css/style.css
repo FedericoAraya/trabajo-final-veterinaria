@@ -1,14 +1,22 @@
 /* Color logo: #026b71 */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 ;
   list-style-type: none;
   outline: none;
-  text-decoration: none;
-  font-family: sans-serif;
+  text-decoration: none ;
+  font-family: sans-serif !important;
 }
-
+p{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
 header {
   display: flex;
   align-items: center;
@@ -16,6 +24,7 @@ header {
   top: 0;
   width: 100vw;
   z-index: 10;
+  
 }
 
 .logo img {
@@ -31,6 +40,11 @@ header {
   height: inherit;
   color: #026b71;
   font-weight: 900;
+  margin: 0;
+  line-height:1;
+}
+.logo a{
+  text-decoration: none;
 }
 
 .logo {
@@ -42,6 +56,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding-right: 100px;
+  
 }
 .respmenu a {
   color: white;
@@ -50,6 +65,7 @@ header {
   background: #026b71;
   font-variant: small-caps;
   z-index: 10;
+  text-decoration: none;
 }
 
 .respmenu input[type="checkbox"],
@@ -121,7 +137,7 @@ header {
   right: 5vw;
   height: 70px;
   width: 70px;
-  z-index: 0;
+  z-index: 10;
 }
 /* MAIN */
 
@@ -221,19 +237,13 @@ header {
   flex-wrap: wrap;
   width: 100vw;
   padding: 30px;
+    justify-content: space-evenly;
 }
-.galeriaInstalaciones div {
-  margin: 10px;
-  
+.galeriaInstalaciones .card{
+  margin: 20px 10px;
+  background-color: #b9d7d9;
 }
-.galeriaInstalaciones img {
-  width: 350px;
-  height: 280px;
-  object-fit: cover;
-}
-.galeriaInstalaciones p {
-  width: 350px;
-}
+
 
 /* Main Turnos */
 .mainTurnos {
@@ -410,16 +420,7 @@ footer p {
     }
 
     /* media Instalaciones */
-    .galeriaInstalaciones {
-      justify-content: space-between;
-    }
-    .galeriaInstalaciones img {
-      width: 280px;
-      height: 200px;
-    }
-    .galeriaInstalaciones p {
-      width: 280px;
-    }
+
     /* media Turnos */
     .turnos img {
       width: 100vw;
