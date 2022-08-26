@@ -1,0 +1,450 @@
+/* Color logo: #026b71 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+}
+
+
+.logo h1 {
+  font-size: large;
+  max-width: 260px;
+  height: inherit;
+  color: #026b71;
+  font-weight: 900;
+}
+
+.logo {
+  display: flex;
+  position: sticky;
+  width: 75vw;
+  height: 90px;
+  background: #b9d7d9;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 100px;
+}
+.respmenu a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  background: #026b71;
+  font-variant: small-caps;
+  z-index: 10;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .menu,
+.respmenu .cruz {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.respmenu .menu,
+.respmenu .cruz {
+  font-size: 48px;
+  pointer-events: none;
+  margin: 30px;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+  width: 90px;
+  height: 90px;
+}
+.respmenu {
+  display: flex;
+  color: white;
+  position: relative;
+  top: 0;
+  right: 0;
+  background: #b9d7d9;
+  height: 90px;
+  width: 25vw;
+  z-index: 10;
+}
+
+.respmenu nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  z-index: 10;
+  height: 65vh;
+  background-color: #026b71;
+  border-bottom-left-radius: 10px;
+}
+.respmenu input:checked ~ nav {
+  display: block;
+}
+.respmenu input:checked ~ .menu {
+  display: none;
+}
+.respmenu input:not(:checked) ~ .cruz {
+  display: none;
+}
+
+.small {
+  display: flex;
+  margin-top: auto;
+}
+.small a {
+  font-size: 12px;
+}
+
+/* Logo Whatsapp */
+.logoFlotanteWapp {
+  position: fixed;
+  bottom: 18vh;
+  right: 5vw;
+  height: 70px;
+  width: 70px;
+  z-index: 0;
+}
+/* MAIN */
+
+/* Main index*/
+.mainInicio {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #d7ebec;
+}
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.nosotrosTexto {
+  width: 80vw;
+  margin-bottom: 20px;
+}
+.nosotrosTexto h2 {
+  color: #026b71;
+  font-size: xx-large;
+}
+.nosotros iframe {
+  width: 80vw;
+}
+.notas {
+  display: flex;
+  flex-direction: column;
+}
+.notas h3 {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #026b71;
+}
+.notasVideos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notasVideos iframe {
+  width: 80vw;
+  margin: 20px;
+}
+/* Main Servicios */
+
+.mainServicios {
+  display: flex;
+  flex-direction: column;
+  background-color: #d7ebec;
+}
+.mainServicios h2 {
+  font-size: xx-large;
+  margin: 30px;
+  color: #026b71;
+}
+.galeriaServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeriaServicios img {
+  width: 90vw;
+  margin: 15px;
+}
+.galeriaServicios p {
+  width: 90vw;
+  margin: 0px 15px 20px 15px;
+  font-size: xx-large;
+}
+
+/* Main Instalaciones */
+.mainInstalaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7ebec;
+  width: 100vw;
+}
+.nuestrasInstalaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 80vw;
+  margin: 20px;
+}
+.nuestrasInstalaciones h2 {
+  color: #026b71;
+  margin-bottom: 15px;
+}
+.galeriaInstalaciones {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 30px;
+}
+.galeriaInstalaciones div {
+  margin: 10px;
+  
+}
+.galeriaInstalaciones img {
+  width: 350px;
+  height: 280px;
+  object-fit: cover;
+}
+.galeriaInstalaciones p {
+  width: 350px;
+}
+
+/* Main Turnos */
+.mainTurnos {
+  display: flex;
+  flex-direction: column;
+  background-color: #d7ebec;
+}
+.turnos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.turnos h1 {
+  color: #026b71;
+  margin-bottom: 10px;
+}
+.turnos img {
+  width: 100vw;
+  padding: 20px;
+}
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.descripcion img {
+  width: 100vw;
+  padding: 20px;
+}
+
+/* Main Contacto */
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "horario"
+    "formulario"
+    "mapa";
+  justify-items: center;
+  background-color: #d7ebec;
+}
+.horario {
+  grid-area: horario;
+  margin: 20px;
+}
+.horario h2 {
+  text-align: center;
+  color: #026b71;
+}
+.formConsulta {
+  grid-area: formulario;
+  margin: 20px;
+}
+.formConsulta h3 {
+  color: #026b71;
+  margin-bottom: 10px;
+}
+.gridMapa {
+  grid-area: mapa;
+  margin: 20px;
+}
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b9d7d9;
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+  
+}
+
+footer p {
+  font-size: smaller;
+}
+.redes img {
+  height: 30px;
+  width: 30px;
+  margin: 3px;
+}
+.dc {
+  display: flex;
+  align-items: center;
+}
+.dc img {
+  width: 60px;
+  height: 80px;
+}
+.dc h6 {
+  font-size: small;
+  padding: 6px;
+}
+
+@media (min-width: 768px) {
+  /* Media Header */
+  .respmenu a {
+    color: #026b71;
+    display: flex;
+    padding: 0px 10px;
+    background: transparent;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .respmenu .menu,
+  .respmenu .cruz {
+    display: none;
+  }
+
+  .respmenu {
+    display: flex;
+    color: white;
+    position: relative;
+    background: #b9d7d9;
+    height: 90px;
+    width: 60vw;
+  }
+  .respmenu ul {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    position: relative;
+    right: 0;
+  }
+  .respmenu nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 40px;
+    right: 0;
+    top: 0px;
+    height: 60px;
+    width: inherit;
+    background-color: transparent;
+  }
+
+  .small {
+    display: none;
+  }
+  /* Medias*/
+  @media (min-width: 768px) {
+    /* media index */
+    .notasVideos {
+      flex-direction: row;
+    }
+    /* media Servicios */
+    .servicios1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .servicios2 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .galeriaServicios img {
+      width: 50vw;
+      margin: 0;
+      padding: 0;
+    }
+    .galeriaServicios p {
+      width: 50vw;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* media Instalaciones */
+    .galeriaInstalaciones {
+      justify-content: space-between;
+    }
+    .galeriaInstalaciones img {
+      width: 280px;
+      height: 200px;
+    }
+    .galeriaInstalaciones p {
+      width: 280px;
+    }
+    /* media Turnos */
+    .turnos img {
+      width: 100vw;
+      height: 55vh;
+      padding: 20px;
+      object-fit: cover;
+    }
+    .descripcion img {
+      width: 100vw;
+      height: 55vh;
+      padding: 20px;
+      object-fit: cover;
+    }
+    /* media Contacto */
+
+    .mainContacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "horario horario"
+        "formulario mapa";
+    }
+    .horario h2{
+      margin: 20px;
+    }
+  }
+}

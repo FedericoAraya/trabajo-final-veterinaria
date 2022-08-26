@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imagenes/logoVet.jpg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="./imagenes/logo sin fondo.png" />
+    <title>C.V.Bolivar-Turnos</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../imagenes/logo sin fondo.png" alt="Logo" />
+        </a>
+        <a href="../index.html">
+          <h1>Centro Veterinario Bolivar</h1>
+        </a>
+      </div>
+      <div class="respmenu">
+        <input type="checkbox" class="menuHamb" />
+        <img
+          class="menu"
+          src="../imagenes/Menú-hamburguesa-herramienta-practica-o-icono-inutil.png"
+          alt="Menu"
+        />
+        <img class="cruz" src="../imagenes/cruz.png" alt="Cruz" />
+        <nav>
+          <ul>
+            <li><a href="../index.html"> Inicio </a></li>
+            <li><a href="./servicios.html"> Servicios </a></li>
+            <li><a href="./instalaciones.html"> Instalaciones </a></li>
+            <li><a href="./turnos.html"> Turnos </a></li>
+            <li><a href="./contacto.html"> Contacto </a></li>
+            <li class="small">
+              <a
+                href="https://api.whatsapp.com/send/?phone=543513415071&text&type=phone_number&app_absent=0"
+                target="_blank"
+                >Whatsapp</a
+              >
+              <a
+                href="https://instagram.com/centrovetbolivar?igshid=YmMyMTA2M2Y"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <a
+      href="https://api.whatsapp.com/send/?phone=543513415071&text&type=phone_number&app_absent=0"
+      target="_blank"
+    >
+      <img
+        class="logoFlotanteWapp"
+        src="../imagenes/WhatsApp-Logo-Transparent-Clip-Art-Background.png"
+        alt="Logo whatsapp"
+      />
+    </a>
+    <main class="mainTurnos">
+      <div class="turnos">
+        <img src="../imagenes/sala de espera 2.jpg" alt="turnos" />
+        <div class="turnero">
+          <h1>Solicitá tu Turno</h1>
+          <!-- Turnero -->
+          <form action="#" method="get">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre y Apellido"
+              required
+            />
+            <input
+              type="text"
+              name="nombrePaciente"
+              placeholder="Nombre del Paciente"
+              required
+            />
+            <br /><br />
+            <input type="tel" name="Telefono" placeholder="Telefono" required />
+            <input type="email" name="e-mail" placeholder="E-mail" required />
+            <br /><br />
+            <select name="tipoDeConsulta" required>
+              <option value="clinica">Consulta Clinica</option>
+              <option value="vacunas">Vacunación</option>
+              <option value="control">Control</option>
+              <option value="cardio">Consulta Cardiologica</option>
+              <option value="traumato">Consulta traumatologica</option>
+              <option value="pelu">Peluqueria</option>
+            </select>
+            <input type="datetime-local" name="dia&hora" required />
+            <br /><br />
+            <input
+              class="enviarTurno"
+              type="submit"
+              type="reset"
+              value="enviar"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="descripcion">
+        <img src="../imagenes/sala de espera 2.jpg" alt="turnos" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus labore
+          ab, dicta in totam quaerat tempora voluptatibus quam nobis dolorum est
+          sunt quae quod. Ab dolore eum nisi iste voluptatum illum. Aperiam cum
+          blanditiis consectetur eligendi quisquam dicta sunt voluptatibus.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>Sitio web desarrollado por Araya Federico ©</p>
+      <div class="redes">
+        <a
+          href="https://api.whatsapp.com/send/?phone=543513415071&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <img src="../imagenes/whatsapp.png" alt="Logo Whatsapp" />
+        </a>
+        <a
+          href="https://instagram.com/centrovetbolivar?igshid=YmMyMTA2M2Y"
+          target="_blank"
+        >
+          <img src="../imagenes/instagram.png" alt="Logo Instagram" />
+        </a>
+      </div>
+      <div class="dc">
+        <img src="../imagenes/dc.jpg" alt="Foto veterinario" />
+        <h6>Director Clínico: Torino Matías M.P 3773</h6>
+      </div>
+    </footer>
+  </body>
+</html>
