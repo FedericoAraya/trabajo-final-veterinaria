@@ -162,8 +162,18 @@ header {
   color: #026b71;
   font-size: xx-large;
 }
-.nosotros iframe {
-  width: 80vw;
+.carousel{
+  width: 100vw;
+  height: 50vh;
+}
+.carousel-item img{
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.carousel-caption p{
+  text-shadow: -1px 1px #030303;
 }
 .notas {
   display: flex;
@@ -393,6 +403,9 @@ footer p {
   /* Medias*/
   @media (min-width: 768px) {
     /* media index */
+    .nosotrosTexto p{
+      display: none;
+    }
     .notasVideos {
       flex-direction: row;
     }
