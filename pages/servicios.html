@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../imagenes/logoVet.jpg" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -13,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+
     <link rel="shortcut icon" href="./imagenes/logo sin fondo.png" />
     <title>C.V.Bolivar-Servicios</title>
   </head>
@@ -70,7 +75,7 @@
     <main class="mainServicios">
       <h2>Servicios</h2>
       <section class="galeriaServicios">
-        <div class="card m-3">
+        <div class="card m-3 wow animate__animated animate__fadeInRight">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -91,9 +96,9 @@
             </div>
           </div>
         </div>
-        <div class="card m-3 ">
+        <div class="card m-3 wow animate__animated animate__fadeInLeft">
           <div class="row g-0 card-reverse">
-            <div class=" col-md-8">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Cirugias</h5>
                 <p class="card-text">
@@ -103,7 +108,7 @@
                 </p>
               </div>
             </div>
-            <div class=" col-md-4">
+            <div class="col-md-4">
               <img
                 src="../imagenes/fotos mias/ciru35.jpg"
                 class="img-fluid rounded-end"
@@ -112,7 +117,7 @@
             </div>
           </div>
         </div>
-        <div class="card m-3">
+        <div class="card m-3 wow animate__animated animate__fadeInRight">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -133,9 +138,9 @@
             </div>
           </div>
         </div>
-        <div class="card m-3 ">
+        <div class="card m-3 wow animate__animated animate__fadeInLeft">
           <div class="row g-0 card-reverse">
-            <div class=" col-md-8">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Laboratorio</h5>
                 <p class="card-text">
@@ -145,7 +150,7 @@
                 </p>
               </div>
             </div>
-            <div class=" col-md-4">
+            <div class="col-md-4">
               <img
                 src="../imagenes/fotos mias/lab1.jpg"
                 class="img-fluid rounded-end"
@@ -154,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="card m-3">
+        <div class="card m-3 wow animate__animated animate__fadeInRight">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -175,9 +180,9 @@
             </div>
           </div>
         </div>
-        <div class="card m-3 ">
+        <div class="card m-3 wow animate__animated animate__fadeInLeft">
           <div class="row g-0 card-reverse">
-            <div class=" col-md-8">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Accesorios</h5>
                 <p class="card-text">
@@ -187,7 +192,7 @@
                 </p>
               </div>
             </div>
-            <div class=" col-md-4">
+            <div class="col-md-4">
               <img
                 src="../imagenes/fotos mias/acc1.jpg"
                 class="img-fluid rounded-end"
@@ -196,7 +201,7 @@
             </div>
           </div>
         </div>
-        <div class="card m-3">
+        <div class="card m-3 wow animate__animated animate__fadeInRight">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -217,9 +222,9 @@
             </div>
           </div>
         </div>
-        <div class="card m-3 ">
+        <div class="card m-3 wow animate__animated animate__fadeInLeft">
           <div class="row g-0 card-reverse">
-            <div class=" col-md-8">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Elementos de bienestar y seguridad</h5>
                 <p class="card-text">
@@ -229,7 +234,7 @@
                 </p>
               </div>
             </div>
-            <div class=" col-md-4">
+            <div class="col-md-4">
               <img
                 src="../imagenes/fotos mias/bebederos1.jpg"
                 class="img-fluid rounded-end"
@@ -238,7 +243,6 @@
             </div>
           </div>
         </div>
-        
       </section>
     </main>
     <footer>
@@ -268,5 +272,9 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

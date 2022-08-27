@@ -1,23 +1,29 @@
 /* Color logo: #026b71 */
 * {
   box-sizing: border-box;
-  margin: 0 ;
-  padding: 0 ;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   outline: none;
-  text-decoration: none ;
+  text-decoration: none;
   font-family: sans-serif !important;
 }
-p{
+
+p {
   margin: 0;
   padding: 0;
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   font-weight: 700;
 }
-ul{
+ul {
   padding: 0;
 }
 header {
@@ -27,7 +33,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-  
 }
 
 .logo img {
@@ -36,7 +41,6 @@ header {
   margin: 10px;
 }
 
-
 .logo h1 {
   font-size: large;
   max-width: 260px;
@@ -44,9 +48,9 @@ header {
   color: #026b71;
   font-weight: 900;
   margin: 0;
-  line-height:1;
+  line-height: 1;
 }
-.logo a{
+.logo a {
   text-decoration: none;
 }
 
@@ -59,11 +63,10 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding-right: 100px;
-  
 }
 .respmenu a {
   color: white;
-  border-bottom: 1px solid  #cbdfdf;
+  border-bottom: 1px solid #cbdfdf;
   display: block;
   padding: 10px 20px;
   background: #026b71;
@@ -169,17 +172,17 @@ header {
   color: #026b71;
   font-size: xx-large;
 }
-.carousel{
+.carousel {
   width: 100%;
   height: 50vh;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 50vh;
   object-fit: cover;
 }
 
-.carousel-caption p{
+.carousel-caption p {
   text-shadow: -1px 1px #030303;
 }
 .notas {
@@ -218,14 +221,17 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 25px;
 }
-.galeriaServicios img{
+.galeriaServicios img {
   width: 100%;
 }
-.galeriaServicios .card{
+.galeriaServicios .card {
   background-color: #b9d7d9;
+ width: 100%;
+ 
 }
-.card-reverse{
+.card-reverse {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -255,13 +261,17 @@ header {
   flex-wrap: wrap;
   width: 100%;
   padding: 30px;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.galeriaInstalaciones .card{
+.galeriaInstalaciones .card {
   margin: 20px 10px;
   background-color: #b9d7d9;
 }
-
+.galeriaInstalaciones .card:hover{
+  transform: scale(1.2);
+  transition: 0.3s;
+  z-index: 4;
+}
 
 /* Main Turnos */
 .mainTurnos {
@@ -283,20 +293,19 @@ header {
   width: 100%;
   padding: 20px;
 }
-.accordion{
+.accordion {
   margin: 30px;
 }
 .descripcion img {
   width: 100%;
   padding: 20px;
 }
-.accordion-item{
-  background-color:#b9d7d9;
+.accordion-item {
+  background-color: #b9d7d9;
 }
-.accordion-button{
+.accordion-button {
   background-color: #cbdfdf;
   border: solid 2px #b8b8b8;
-  
 }
 
 /* Main Contacto */
@@ -341,7 +350,6 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 15px;
-  
 }
 
 footer p {
@@ -413,36 +421,36 @@ footer p {
   .small {
     display: none;
   }
-  /* Medias*/
-  @media (min-width: 768px) {
-    /* media index */
-    .nosotrosTexto p{
-      display: none;
-    }
-    .notasVideos {
-      flex-direction: row;
-    }
-    /* media Servicios */
-    .card-reverse{
-      display: flex;
-      flex-direction: row;
-    }
 
-    /* media Turnos */
+  /* media index */
+  .nosotrosTexto p {
+    display: none;
+  }
+  .notasVideos {
+    flex-direction: row;
+  }
+  /* media Servicios */
+  .card-reverse {
+    display: flex;
+    flex-direction: row;
+  }
+  .galeriaServicios .card img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  /* media Turnos */
 
+  /* media Contacto */
 
-    /* media Contacto */
-
-    .mainContacto {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      grid-template-areas:
-        "horario horario"
-        "formulario mapa";
-    }
-    .horario h2{
-      margin: 20px;
-    }
+  .mainContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "horario horario"
+      "formulario mapa";
+  }
+  .horario h2 {
+    margin: 20px;
   }
 }
