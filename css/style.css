@@ -22,7 +22,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   
 }
@@ -143,7 +143,7 @@ header {
 
 /* Main index*/
 .mainInicio {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #d7ebec;
@@ -153,6 +153,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 .nosotrosTexto {
   width: 80vw;
@@ -163,11 +164,11 @@ header {
   font-size: xx-large;
 }
 .carousel{
-  width: 100vw;
+  width: 100%;
   height: 50vh;
 }
 .carousel-item img{
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   object-fit: cover;
 }
@@ -210,7 +211,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 .galeriaServicios img{
   width: 100%;
@@ -229,7 +230,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #d7ebec;
-  width: 100vw;
+  width: 100%;
 }
 .nuestrasInstalaciones {
   display: flex;
@@ -246,7 +247,7 @@ header {
 .galeriaInstalaciones {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   padding: 30px;
     justify-content: space-evenly;
 }
@@ -273,14 +274,14 @@ header {
   margin-bottom: 10px;
 }
 .turnos img {
-  width: 100vw;
+  width: 100%;
   padding: 20px;
 }
 .accordion{
   margin: 30px;
 }
 .descripcion img {
-  width: 100vw;
+  width: 100%;
   padding: 20px;
 }
 .accordion-item{
