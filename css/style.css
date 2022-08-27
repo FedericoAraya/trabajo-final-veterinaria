@@ -381,7 +381,7 @@ footer p {
 
 @media (min-width: 768px) {
   /* Media Header */
-  
+
   .respmenu a {
     color: #026b71;
     display: flex;
@@ -446,7 +446,11 @@ footer p {
     object-fit: cover;
   }
   /* media Turnos */
-
+.mainTurnos img{
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 0px 40%;
+}
   /* media Contacto */
 
   .mainContacto {
