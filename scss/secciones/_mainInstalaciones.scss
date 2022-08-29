@@ -1,0 +1,35 @@
+.mainInstalaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7ebec;
+  width: 100%;
+  .nuestrasInstalaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 80vw;
+    margin: 20px;
+    h2 {
+      color: #026b71;
+      margin-bottom: 15px;
+    }
+  }
+  .galeriaInstalaciones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-evenly;
+    .card {
+      margin: 20px 10px;
+      background-color: #b9d7d9;
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+        z-index: 4;
+      }
+    }
+  }
+}

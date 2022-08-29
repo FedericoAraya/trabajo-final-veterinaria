@@ -1,0 +1,54 @@
+/* Main Contacto */
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "horario"
+    "formulario"
+    "mapa";
+  justify-items: center;
+  background-color: #d7ebec;
+  .horario {
+    grid-area: horario;
+    margin: 20px;
+    h2 {
+      text-align: center;
+      color: #026b71;
+    }
+  }
+  .formConsulta {
+    grid-area: formulario;
+    margin: 20px;
+    h3 {
+      color: #026b71;
+      margin-bottom: 10px;
+    }
+  }
+  .gridMapa {
+    width: 100%;
+    grid-area: mapa;
+    margin: 20px;
+    .mapa {
+      width: 100%;
+      height: 350px;
+      padding: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mainContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "horario horario"
+      "formulario mapa";
+    .horario {
+      h2 {
+        margin: 20px;
+      }
+    }
+  }
+}
