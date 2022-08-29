@@ -72,7 +72,15 @@ header {
       font-variant: small-caps;
       z-index: 10;
       text-decoration: none; }
-    header .respmenu .menu,
+    header .respmenu .menu {
+      font-size: 48px;
+      pointer-events: none;
+      margin: 30px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px; }
     header .respmenu .cruz {
       font-size: 48px;
       pointer-events: none;
@@ -88,9 +96,7 @@ header {
       height: 90px;
       position: absolute;
       right: 0;
-      top: 0;
-      width: 30px;
-      height: 30px; }
+      top: 0; }
       header .respmenu input[type="checkbox"]:checked ~ nav {
         display: block; }
       header .respmenu input[type="checkbox"]:checked ~ .menu {
@@ -128,7 +134,8 @@ header {
       font-size: large;
       font-weight: bold;
       border: none; }
-    header .respmenu .menu,
+    header .respmenu .menu {
+      display: none; }
     header .respmenu .cruz {
       display: none; }
     header .respmenu nav {

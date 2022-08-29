@@ -54,7 +54,16 @@ header {
       z-index: 10;
       text-decoration: none;
     }
-    .menu,
+    .menu{
+      font-size: 48px;
+      pointer-events: none;
+      margin: 30px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+    }
     .cruz {
       font-size: 48px;
       pointer-events: none;
@@ -72,8 +81,6 @@ header {
       position: absolute;
       right: 0;
       top: 0;
-      width: 30px;
-      height: 30px;
       &:checked ~ nav {
         display: block;
       }
@@ -122,7 +129,9 @@ header {
         font-weight: bold;
         border: none;
       }
-      .menu,
+      .menu{
+        display: none;
+      }
       .cruz {
         display: none;
       }
