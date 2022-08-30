@@ -21,14 +21,14 @@ h6 {
   padding: 0;
   font-weight: 700; }
 
-header {
+.header {
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 10; }
-  header .logo {
+  .header .logo {
     display: flex;
     position: sticky;
     width: 75vw;
@@ -37,11 +37,11 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding-right: 100px; }
-    header .logo img {
+    .header .logo img {
       width: 80px;
       height: auto;
       margin: 10px; }
-    header .logo h1 {
+    .header .logo h1 {
       font-size: large;
       max-width: 260px;
       height: inherit;
@@ -49,9 +49,9 @@ header {
       font-weight: 900;
       margin: 0;
       line-height: 1; }
-    header .logo a {
+    .header .logo a {
       text-decoration: none; }
-  header .respmenu {
+  .header .respmenu {
     display: flex;
     color: white;
     font-weight: 600;
@@ -63,7 +63,7 @@ header {
     height: 90px;
     width: 25vw;
     z-index: 10; }
-    header .respmenu a {
+    .header .respmenu a {
       color: white;
       border-bottom: 1px solid #cbdfdf;
       display: block;
@@ -72,7 +72,7 @@ header {
       font-variant: small-caps;
       z-index: 10;
       text-decoration: none; }
-    header .respmenu .menu {
+    .header .respmenu .menu {
       font-size: 48px;
       pointer-events: none;
       margin: 30px;
@@ -81,7 +81,7 @@ header {
       top: 0;
       width: 30px;
       height: 30px; }
-    header .respmenu .cruz {
+    .header .respmenu .cruz {
       font-size: 48px;
       pointer-events: none;
       margin: 30px;
@@ -90,20 +90,20 @@ header {
       top: 0;
       width: 30px;
       height: 30px; }
-    header .respmenu input[type="checkbox"] {
+    .header .respmenu input[type="checkbox"] {
       opacity: 0;
       width: 90px;
       height: 90px;
       position: absolute;
       right: 0;
       top: 0; }
-      header .respmenu input[type="checkbox"]:checked ~ nav {
+      .header .respmenu input[type="checkbox"]:checked ~ nav {
         display: block; }
-      header .respmenu input[type="checkbox"]:checked ~ .menu {
+      .header .respmenu input[type="checkbox"]:checked ~ .menu {
         display: none; }
-      header .respmenu input[type="checkbox"]:not(:checked) ~ .cruz {
+      .header .respmenu input[type="checkbox"]:not(:checked) ~ .cruz {
         display: none; }
-    header .respmenu nav {
+    .header .respmenu .nav {
       display: none;
       position: absolute;
       right: 0;
@@ -112,21 +112,21 @@ header {
       height: auto;
       background-color: #026b71;
       border-bottom-left-radius: 10px; }
-      header .respmenu nav .small {
+      .header .respmenu .nav .small {
         display: flex;
         margin-top: auto; }
-        header .respmenu nav .small a {
+        .header .respmenu .nav .small a {
           font-size: 12px; }
 
 @media (min-width: 768px) {
-  header .respmenu {
+  .header .respmenu {
     display: flex;
     color: white;
     position: relative;
     background: #b9d7d9;
     height: 90px;
     width: 60vw; }
-    header .respmenu a {
+    .header .respmenu a {
       color: #026b71;
       display: flex;
       padding: 0px 10px;
@@ -134,11 +134,11 @@ header {
       font-size: large;
       font-weight: bold;
       border: none; }
-    header .respmenu .menu {
+    .header .respmenu .menu {
       display: none; }
-    header .respmenu .cruz {
+    .header .respmenu .cruz {
       display: none; }
-    header .respmenu nav {
+    .header .respmenu .nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -149,13 +149,13 @@ header {
       height: 60px;
       width: inherit;
       background-color: transparent; }
-      header .respmenu nav ul {
+      .header .respmenu .nav ul {
         display: flex;
         height: 90px;
         align-items: center;
         position: relative;
         right: 0; }
-        header .respmenu nav ul .small {
+        .header .respmenu .nav ul .small {
           display: none; } }
 
 .logoFlotanteWapp {
@@ -237,6 +237,8 @@ header {
       .mainServicios .galeriaServicios .card .card-reverse {
         display: flex;
         flex-direction: column-reverse; }
+    .mainServicios .galeriaServicios .animate__animated {
+      animation-duration: 2s; }
 
 @media (min-width: 768px) {
   .mainServicios .galeriaServicios .card img {
@@ -324,6 +326,9 @@ header {
     .mainContacto .horario h2 {
       text-align: center;
       color: #026b71; }
+    .mainContacto .horario th,
+    .mainContacto .horario td {
+      padding: 3px; }
   .mainContacto .formConsulta {
     grid-area: formulario;
     margin: 20px; }
@@ -348,7 +353,7 @@ header {
     .mainContacto .horario h2 {
       margin: 20px; } }
 
-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,18 +362,18 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 15px; }
-  footer p {
+  .footer p {
     font-size: smaller; }
-  footer .redes img {
+  .footer .redes img {
     height: 30px;
     width: 30px;
     margin: 3px; }
-  footer .dc {
+  .footer .dc {
     display: flex;
     align-items: center; }
-    footer .dc img {
+    .footer .dc img {
       width: 60px;
       height: 80px; }
-    footer .dc h6 {
+    .footer .dc h6 {
       font-size: small;
       padding: 6px; }

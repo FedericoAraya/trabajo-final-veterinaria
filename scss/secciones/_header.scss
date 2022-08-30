@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   align-items: center;
   position: sticky;
@@ -91,7 +91,7 @@ header {
         display: none;
       }
     }
-    nav {
+    .nav {
       display: none;
       position: absolute;
       right: 0;
@@ -112,7 +112,7 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
+  .header {
     .respmenu {
       display: flex;
       color: white;
@@ -136,7 +136,7 @@ header {
         display: none;
       }
 
-      nav {
+      .nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;

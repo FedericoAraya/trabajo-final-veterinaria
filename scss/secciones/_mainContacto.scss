@@ -15,6 +15,10 @@
       text-align: center;
       color: #026b71;
     }
+    th,
+    td{
+      padding: 3px;
+    }
   }
   .formConsulta {
     grid-area: formulario;
