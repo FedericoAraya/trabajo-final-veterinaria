@@ -276,7 +276,6 @@ header {
         transition: 0.3s;
         z-index: 4; }
 
-/* Main Turnos */
 .mainTurnos {
   display: flex;
   flex-direction: column;
@@ -312,7 +311,6 @@ header {
     object-fit: cover;
     object-position: 0px 40%; } }
 
-/* Main Contacto */
 .mainContacto {
   display: grid;
   grid-template-columns: 1fr;
