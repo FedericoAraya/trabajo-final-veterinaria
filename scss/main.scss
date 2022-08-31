@@ -1,4 +1,7 @@
-@import './secciones/_reseteo';
+//variables
+@import './variables/colores.scss';
+//secciones
+@import './secciones/reseteo';
 @import './secciones/header';
 @import './secciones/logoWapp';
 @import './secciones/mainIndex';

@@ -2,14 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  outline: none;
-  text-decoration: none;
   font-family: sans-serif !important; }
-
-p {
-  margin: 0;
-  padding: 0; }
 
 h1,
 h2,
@@ -17,8 +10,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
   font-weight: 700; }
 
 .header {
@@ -112,6 +103,8 @@ h6 {
       height: auto;
       background-color: #026b71;
       border-bottom-left-radius: 10px; }
+      .header .respmenu .nav ul {
+        list-style-type: none; }
       .header .respmenu .nav .small {
         display: flex;
         margin-top: auto; }
