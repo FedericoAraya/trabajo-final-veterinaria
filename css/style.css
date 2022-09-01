@@ -142,6 +142,8 @@
       font-size: large;
       font-weight: bold;
       border: none; }
+    .header .respmenu .active {
+      text-decoration: underline; }
     .header .respmenu .menu {
       display: none; }
     .header .respmenu .cruz {
@@ -319,7 +321,8 @@
     margin: 20px; }
     .mainContacto .horario th,
     .mainContacto .horario td {
-      padding: 3px; }
+      padding: 3px 10px;
+      border: 3px solid black; }
   .mainContacto .formConsulta {
     grid-area: formulario;
     margin: 20px; }
