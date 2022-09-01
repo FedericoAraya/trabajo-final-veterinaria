@@ -234,7 +234,7 @@
         display: flex;
         flex-direction: column-reverse; }
       .mainServicios .galeriaServicios .card .card-title {
-        font-size: 3.5vh; }
+        font-size: 25px; }
     .mainServicios .galeriaServicios .animate__animated {
       animation-duration: 2s; }
 

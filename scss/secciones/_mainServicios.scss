@@ -22,7 +22,7 @@
         flex-direction: column-reverse;
       }
       .card-title {
-        @include tituloSecundario(3.5vh);
+        @include tituloSecundario(25px);
       }
       .card-text {
         @extend %estiloParrafo;
