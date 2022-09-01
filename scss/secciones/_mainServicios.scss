@@ -1,27 +1,31 @@
 .mainServicios {
   display: flex;
   flex-direction: column;
-  background-color: #d7ebec;
-  h2 {
-    font-size: xx-large;
-    margin: 30px 0px 10px 30px;
-    color: $colorLogo;
+  background-color: $colorFondo;
+  h3 {
+    @extend %titulo;
   }
   .galeriaServicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
     img {
       width: 100%;
     }
     .card {
-      background-color: #b9d7d9;
+      background-color: $colorHeader;
       width: 100%;
       .card-reverse {
         display: flex;
         flex-direction: column-reverse;
+      }
+      .card-title {
+        @include tituloSecundario(3.5vh);
+      }
+      .card-text {
+        @extend %estiloParrafo;
       }
     }
     .animate__animated {

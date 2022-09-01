@@ -10,7 +10,7 @@
     position: sticky;
     width: 75vw;
     height: 90px;
-    background: #b9d7d9;
+    background: $colorHeader;
     justify-content: flex-start;
     align-items: center;
     padding-right: 100px;
@@ -19,11 +19,11 @@
       height: auto;
       margin: 10px;
     }
-    h1 {
+    h2 {
       font-size: large;
       max-width: 260px;
       height: inherit;
-      color: #026b71;
+      color: $colorLogo;
       font-weight: 900;
       margin: 0;
       line-height: 1;
@@ -40,7 +40,7 @@
     position: relative;
     top: 0;
     right: 0;
-    background: #b9d7d9;
+    background: $colorHeader;
     height: 90px;
     width: 25vw;
     z-index: 10;
@@ -120,7 +120,7 @@
       display: flex;
       color: white;
       position: relative;
-      background: #b9d7d9;
+      background: $colorHeader;
       height: 90px;
       width: 60vw;
       a {

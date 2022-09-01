@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #b9d7d9;
+    background-color: $colorHeader;
     height: 90px;
     width: 100%;
     overflow: hidden;
     padding: 15px;
     p {
-        font-size: smaller;
+        @extend %subIndice;
       }
       .redes{
         img {
@@ -25,8 +25,7 @@
             height: 80px;
           }
           h6 {
-            font-size: small;
-            padding: 6px;
+            @include tituloSecundario (2vh);
           }
       }
   }

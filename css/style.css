@@ -1,16 +1,31 @@
+.mainInicio .nosotros .nosotrosTexto p, .mainServicios .galeriaServicios .card .card-text, .mainInstalaciones .nuestrasInstalaciones p, .mainInstalaciones .galeriaInstalaciones .card .card-text, .mainTurnos .descripcion .accordion-body {
+  text-align: center;
+  font-size: large;
+  color: black;
+  align-content: flex-start; }
+
+.mainInicio .nosotros .carousel .carousel-caption p {
+  text-align: center;
+  font-size: large;
+  color: white;
+  text-shadow: -1px 1px #030303; }
+
+.footer p {
+  font-size: smaller;
+  color: black; }
+
+.mainInicio .nosotros .nosotrosTexto h3, .mainInicio .notas h4, .mainServicios h3, .mainServicios .galeriaServicios .card .card-title, .mainInstalaciones .nuestrasInstalaciones h3, .mainTurnos .turnos h3, .mainTurnos .descripcion h3 button, .mainContacto .horario h3, .mainContacto .formConsulta h3, .footer .dc h6 {
+  color: #026b71;
+  margin: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large; }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif !important; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700; }
 
 .header {
   display: flex;
@@ -32,7 +47,7 @@ h6 {
       width: 80px;
       height: auto;
       margin: 10px; }
-    .header .logo h1 {
+    .header .logo h2 {
       font-size: large;
       max-width: 260px;
       height: inherit;
@@ -173,9 +188,6 @@ h6 {
     .mainInicio .nosotros .nosotrosTexto {
       width: 80vw;
       margin-bottom: 20px; }
-      .mainInicio .nosotros .nosotrosTexto h2 {
-        color: #026b71;
-        font-size: xx-large; }
     .mainInicio .nosotros .carousel {
       width: 100%;
       height: 50vh; }
@@ -184,16 +196,9 @@ h6 {
         height: 50vh;
         object-fit: cover;
         object-position: 70% 50%; }
-      .mainInicio .nosotros .carousel .carousel-caption p {
-        text-shadow: -1px 1px #030303; }
   .mainInicio .notas {
     display: flex;
     flex-direction: column; }
-    .mainInicio .notas h3 {
-      font-size: xx-large;
-      text-align: center;
-      margin-bottom: 20px;
-      color: #026b71; }
     .mainInicio .notas .notasVideos {
       display: flex;
       flex-direction: column;
@@ -212,16 +217,12 @@ h6 {
   display: flex;
   flex-direction: column;
   background-color: #d7ebec; }
-  .mainServicios h2 {
-    font-size: xx-large;
-    margin: 30px 0px 10px 30px;
-    color: #026b71; }
   .mainServicios .galeriaServicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 25px; }
+    padding: 0px 25px 25px 25px; }
     .mainServicios .galeriaServicios img {
       width: 100%; }
     .mainServicios .galeriaServicios .card {
@@ -230,6 +231,8 @@ h6 {
       .mainServicios .galeriaServicios .card .card-reverse {
         display: flex;
         flex-direction: column-reverse; }
+      .mainServicios .galeriaServicios .card .card-title {
+        font-size: 3.5vh; }
     .mainServicios .galeriaServicios .animate__animated {
       animation-duration: 2s; }
 
@@ -252,16 +255,12 @@ h6 {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 80vw;
-    margin: 20px; }
-    .mainInstalaciones .nuestrasInstalaciones h2 {
-      color: #026b71;
-      margin-bottom: 15px; }
+    width: 80vw; }
   .mainInstalaciones .galeriaInstalaciones {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     justify-content: space-evenly; }
     .mainInstalaciones .galeriaInstalaciones .card {
       margin: 20px 10px;
@@ -280,12 +279,14 @@ h6 {
     flex-direction: column;
     align-items: center;
     text-align: center; }
-    .mainTurnos .turnos h1 {
-      color: #026b71;
-      margin-bottom: 10px; }
     .mainTurnos .turnos img {
       width: 100%;
       padding: 20px; }
+    .mainTurnos .turnos .enviarTurno {
+      padding: 3px 6px; }
+  .mainTurnos .descripcion h3 button {
+    font-size: 3vh;
+    margin: 0; }
 
 .descripcion img {
   width: 100%;
@@ -296,7 +297,7 @@ h6 {
   .descripcion .accordion .accordion-item {
     background-color: #b9d7d9; }
   .descripcion .accordion .accordion-button {
-    background-color: #cbdfdf;
+    background-color: #b9d7d9;
     border: solid 2px #b8b8b8; }
 
 @media (min-width: 768px) {
@@ -316,18 +317,12 @@ h6 {
   .mainContacto .horario {
     grid-area: horario;
     margin: 20px; }
-    .mainContacto .horario h2 {
-      text-align: center;
-      color: #026b71; }
     .mainContacto .horario th,
     .mainContacto .horario td {
       padding: 3px; }
   .mainContacto .formConsulta {
     grid-area: formulario;
     margin: 20px; }
-    .mainContacto .formConsulta h3 {
-      color: #026b71;
-      margin-bottom: 10px; }
   .mainContacto .gridMapa {
     width: 100%;
     grid-area: mapa;
@@ -355,8 +350,6 @@ h6 {
   width: 100%;
   overflow: hidden;
   padding: 15px; }
-  .footer p {
-    font-size: smaller; }
   .footer .redes img {
     height: 30px;
     width: 30px;
@@ -368,5 +361,4 @@ h6 {
       width: 60px;
       height: 80px; }
     .footer .dc h6 {
-      font-size: small;
-      padding: 6px; }
+      font-size: 2vh; }

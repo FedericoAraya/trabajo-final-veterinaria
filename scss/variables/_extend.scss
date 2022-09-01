@@ -1,0 +1,29 @@
+%estiloParrafo{
+    text-align: center;
+    font-size: large;
+    color: black;
+    align-content:flex-start;
+}
+%estiloParrafoLigth{
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-shadow: -1px 1px #030303;
+    
+}
+%subIndice{
+    font-size: smaller;
+    color: black;
+}
+ %titulo{
+    color: $colorLogo;
+    margin: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+ }
+
+ @mixin tituloSecundario ($tamanioTitulo) {
+    @extend %titulo;
+    font-size: $tamanioTitulo;
+ }

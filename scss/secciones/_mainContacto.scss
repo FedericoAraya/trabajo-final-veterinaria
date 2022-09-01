@@ -7,13 +7,12 @@
     "formulario"
     "mapa";
   justify-items: center;
-  background-color: #d7ebec;
+  background-color: $colorFondo;
   .horario {
     grid-area: horario;
     margin: 20px;
-    h2 {
-      text-align: center;
-      color: $colorLogo;
+    h3 {
+      @extend %titulo;
     }
     th,
     td{
@@ -24,8 +23,7 @@
     grid-area: formulario;
     margin: 20px;
     h3 {
-      color: #026b71;
-      margin-bottom: 10px;
+      @extend %titulo;
     }
   }
   .gridMapa {
