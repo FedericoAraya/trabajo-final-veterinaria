@@ -17,6 +17,7 @@
     }
     th,
     td{
+      font-size: 3vw;      
       padding: 3px 10px;
       border: 3px solid black;
     }
@@ -50,8 +51,14 @@
       "horario horario"
       "formulario mapa";
     .horario {
-      h2 {
+      h3 {
         margin: 20px;
+      }
+      th,
+      td{
+        font-size: 15px;      
+        padding: 3px 10px;
+        border: 3px solid black;
       }
     }
   }

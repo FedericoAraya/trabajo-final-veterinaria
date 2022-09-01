@@ -322,6 +322,7 @@
     margin: 20px; }
     .mainContacto .horario th,
     .mainContacto .horario td {
+      font-size: 3vw;
       padding: 3px 10px;
       border: 3px solid black; }
   .mainContacto .formConsulta {
@@ -342,8 +343,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "horario horario" "formulario mapa"; }
-    .mainContacto .horario h2 {
-      margin: 20px; } }
+    .mainContacto .horario h3 {
+      margin: 20px; }
+    .mainContacto .horario th,
+    .mainContacto .horario td {
+      font-size: 15px;
+      padding: 3px 10px;
+      border: 3px solid black; } }
 
 .footer {
   display: flex;
