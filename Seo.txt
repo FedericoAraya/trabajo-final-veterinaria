@@ -1,0 +1,7 @@
+1- Selección de lenguaje.
+2- Etiquetas description y keywords.
+3- Jerarquia de titulos.
+4- Etiqueta title bien definida.
+5- Navegación con active en nav.
+6- Agregado Sitemap.
+7- Se chequeo la pagina con minion.
