@@ -1,33 +1,34 @@
+/* footer */
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colorHeader;
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+  p {
+    @extend %subIndice;
+  }
+  /* redes sociales */
+  .redes {
+    img {
+      height: 30px;
+      width: 30px;
+      margin: 3px;
+    }
+  }
+  /* director clínico */
+  .dc {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: $colorHeader;
-    height: 90px;
-    width: 100%;
-    overflow: hidden;
-    padding: 15px;
-    p {
-        @extend %subIndice;
-      }
-      .redes{
-        img {
-            height: 30px;
-            width: 30px;
-            margin: 3px;
-          }
-      }
-      .dc{
-        display: flex;
-        align-items: center;
-        img {
-            width: 60px;
-            height: 80px;
-          }
-          h6 {
-            @include tituloSecundario (2vh);
-          }
-      }
+    img {
+      width: 60px;
+      height: 80px;
+    }
+    h6 {
+      @include tituloSecundario(2vh);
+    }
   }
-  
-
+}

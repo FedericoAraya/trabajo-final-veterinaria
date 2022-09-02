@@ -1,3 +1,4 @@
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -5,6 +6,7 @@
   top: 0;
   width: 100%;
   z-index: 10;
+  /* Logo */
   .logo {
     display: flex;
     position: sticky;
@@ -32,6 +34,7 @@
       text-decoration: none;
     }
   }
+  /* navbar */
   .respmenu {
     display: flex;
     color: white;
@@ -54,7 +57,7 @@
       z-index: 10;
       text-decoration: none;
     }
-    .menu{
+    .menu {
       font-size: 48px;
       pointer-events: none;
       margin: 30px;
@@ -100,8 +103,8 @@
       height: auto;
       background-color: $colorLogo;
       border-bottom-left-radius: 10px;
-     ul{
-    list-style-type: none;
+      ul {
+        list-style-type: none;
       }
       .small {
         display: flex;
@@ -115,6 +118,7 @@
 }
 
 @media (min-width: 768px) {
+  /* navbar */
   .header {
     .respmenu {
       display: flex;
@@ -132,10 +136,10 @@
         font-weight: bold;
         border: none;
       }
-      .active{
+      .active {
         text-decoration: underline;
       }
-      .menu{
+      .menu {
         display: none;
       }
       .cruz {

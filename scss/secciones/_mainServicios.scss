@@ -1,3 +1,4 @@
+/* servicios */
 .mainServicios {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,7 @@
   h3 {
     @extend %titulo;
   }
+  /* galeria servicios */
   .galeriaServicios {
     display: flex;
     flex-direction: column;
@@ -35,6 +37,7 @@
 }
 
 @media (min-width: 768px) {
+  /* galeria servicios */
   .mainServicios {
     .galeriaServicios {
       .card {

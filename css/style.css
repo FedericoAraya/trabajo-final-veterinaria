@@ -1,4 +1,5 @@
-.mainInicio .nosotros .nosotrosTexto p, .mainServicios .galeriaServicios .card .card-text, .mainInstalaciones .nuestrasInstalaciones p, .mainInstalaciones .galeriaInstalaciones .card .card-text, .mainTurnos .descripcion .accordion-body {
+@charset "UTF-8";
+.mainInicio .nosotros .nosotrosTexto p, .mainServicios .galeriaServicios .card .card-text, .mainInstalaciones .nuestrasInstalaciones p, .mainInstalaciones .galeriaInstalaciones .card .card-text, .mainTurnos .descripcion .accordion .accordion-body {
   text-align: center;
   font-size: large;
   color: black;
@@ -21,19 +22,23 @@
   font-weight: 700;
   font-size: xx-large; }
 
+/* reseteo */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif !important; }
 
+/* header */
 .header {
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  /* Logo */
+  /* navbar */ }
   .header .logo {
     display: flex;
     position: sticky;
@@ -127,6 +132,7 @@
           font-size: 12px; }
 
 @media (min-width: 768px) {
+  /* navbar */
   .header .respmenu {
     display: flex;
     color: white;
@@ -168,6 +174,7 @@
         .header .respmenu .nav ul .small {
           display: none; } }
 
+/* logo whatsapp */
 .logoFlotanteWapp {
   position: fixed;
   bottom: 18vh;
@@ -180,7 +187,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #d7ebec; }
+  background-color: #d7ebec;
+  /* nosotros */
+  /* notas */ }
   .mainInicio .nosotros {
     display: flex;
     flex-direction: column;
@@ -210,15 +219,19 @@
         margin: 20px; }
 
 @media (min-width: 768px) {
-  .nosotrosTexto p {
+  /* nosotros */
+  .mainInicio .nosotrosTexto p {
     display: none; }
   .mainInicio .notas .notasVideos {
+    /* notas */
     flex-direction: row; } }
 
+/* servicios */
 .mainServicios {
   display: flex;
   flex-direction: column;
-  background-color: #d7ebec; }
+  background-color: #d7ebec;
+  /* galeria servicios */ }
   .mainServicios .galeriaServicios {
     display: flex;
     flex-direction: column;
@@ -239,6 +252,7 @@
       animation-duration: 2s; }
 
 @media (min-width: 768px) {
+  /* galeria servicios */
   .mainServicios .galeriaServicios .card img {
     max-height: 300px;
     object-fit: cover; }
@@ -251,7 +265,8 @@
   flex-direction: column;
   align-items: center;
   background-color: #d7ebec;
-  width: 100%; }
+  width: 100%;
+  /* nuestras instalaciones */ }
   .mainInstalaciones .nuestrasInstalaciones {
     display: flex;
     flex-direction: column;
@@ -275,7 +290,9 @@
 .mainTurnos {
   display: flex;
   flex-direction: column;
-  background-color: #d7ebec; }
+  background-color: #d7ebec;
+  /* turnero */
+  /* descripcion turnos */ }
   .mainTurnos .turnos {
     display: flex;
     flex-direction: column;
@@ -286,36 +303,36 @@
       padding: 20px; }
     .mainTurnos .turnos .enviarTurno {
       padding: 3px 6px; }
+  .mainTurnos .descripcion img {
+    width: 100%;
+    padding: 20px; }
   .mainTurnos .descripcion h3 button {
     font-size: 3vh;
     margin: 0; }
-
-.descripcion img {
-  width: 100%;
-  padding: 20px; }
-
-.descripcion .accordion {
-  margin: 30px; }
-  .descripcion .accordion .accordion-item {
-    background-color: #b9d7d9; }
-  .descripcion .accordion .accordion-button {
-    background-color: #b9d7d9;
-    border: solid 2px #b8b8b8; }
+  .mainTurnos .descripcion .accordion {
+    margin: 30px; }
+    .mainTurnos .descripcion .accordion .accordion-item {
+      background-color: #b9d7d9; }
+    .mainTurnos .descripcion .accordion .accordion-button {
+      background-color: #b9d7d9;
+      border: solid 2px #b8b8b8; }
 
 @media (min-width: 768px) {
-  /* media Turnos */
   .mainTurnos img {
     max-height: 400px;
     object-fit: cover;
     object-position: 0px 40%; } }
 
+/* main contacto */
 .mainContacto {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "horario" "formulario" "mapa";
   justify-items: center;
-  background-color: #d7ebec; }
+  background-color: #d7ebec;
+  /* horario */
+  /* consulta */ }
   .mainContacto .horario {
     grid-area: horario;
     max-width: 90%;
@@ -342,7 +359,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "horario horario" "formulario mapa"; }
+    grid-template-areas: "horario horario" "formulario mapa";
+    /* horario */ }
     .mainContacto .horario h3 {
       margin: 20px; }
     .mainContacto .horario th,
@@ -351,6 +369,7 @@
       padding: 3px 10px;
       border: 3px solid black; } }
 
+/* footer */
 .footer {
   display: flex;
   align-items: center;
@@ -359,7 +378,9 @@
   height: 90px;
   width: 100%;
   overflow: hidden;
-  padding: 15px; }
+  padding: 15px;
+  /* redes sociales */
+  /* director clínico */ }
   .footer .redes img {
     height: 30px;
     width: 30px;

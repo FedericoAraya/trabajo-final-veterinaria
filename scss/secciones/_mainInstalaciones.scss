@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $colorFondo;
   width: 100%;
+  /* nuestras instalaciones */
   .nuestrasInstalaciones {
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@
     h3 {
       @extend %titulo;
     }
-    p{
+    p {
       @extend %estiloParrafo;
     }
   }
@@ -31,7 +32,7 @@
         transition: 0.3s;
         z-index: 4;
       }
-      .card-text{
+      .card-text {
         @extend %estiloParrafo;
       }
     }
