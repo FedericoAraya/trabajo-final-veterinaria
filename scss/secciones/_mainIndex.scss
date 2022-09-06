@@ -32,8 +32,12 @@
         }
       }
       .carousel-caption {
+right: 0%;
+left: 60%;
+bottom: 0;
         p {
           @extend %estiloParrafoLigth;
+          border-radius: 10px 0px 0px 10px;
         }
       }
     }

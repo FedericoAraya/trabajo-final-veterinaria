@@ -6,9 +6,13 @@
   align-content: flex-start; }
 
 .mainInicio .nosotros .carousel .carousel-caption p {
-  text-align: center;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  width: auto;
+  background-color: #026b71;
   font-size: large;
-  color: white;
+  color: #d7ebec;
   text-shadow: -1px 1px #030303; }
 
 .footer p {
@@ -218,6 +222,12 @@
         height: 50vh;
         object-fit: cover;
         object-position: 70% 50%; }
+      .mainInicio .nosotros .carousel .carousel-caption {
+        right: 0%;
+        left: 60%;
+        bottom: 0; }
+        .mainInicio .nosotros .carousel .carousel-caption p {
+          border-radius: 10px 0px 0px 10px; }
   .mainInicio .notas {
     display: flex;
     flex-direction: column; }

@@ -5,9 +5,13 @@
     align-content:flex-start;
 }
 %estiloParrafoLigth{
-    text-align: center;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    background-color: $colorLogo;
     font-size: large;
-    color: white;
+    color: $colorFondo;
     text-shadow: -1px 1px #030303;
     
 }
