@@ -129,7 +129,14 @@
         display: flex;
         margin-top: auto; }
         .header .respmenu .nav .small a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           font-size: 12px; }
+          .header .respmenu .nav .small a img {
+            width: 25px;
+            padding-right: 5px;
+            filter: invert(1); }
 
 @media (min-width: 768px) {
   /* navbar */

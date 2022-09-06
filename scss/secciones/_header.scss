@@ -56,6 +56,7 @@
       font-variant: small-caps;
       z-index: 10;
       text-decoration: none;
+      
     }
     .menu {
       font-size: 48px;
@@ -110,7 +111,15 @@
         display: flex;
         margin-top: auto;
         a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           font-size: 12px;
+          img{
+            width: 25px;
+            padding-right: 5px;
+            filter: invert(1);
+          }
         }
       }
     }
@@ -134,7 +143,7 @@
         background: transparent;
         font-size: large;
         font-weight: bold;
-        border: none;
+        border: none;       
       }
       .active {
         text-decoration: underline;
