@@ -75,13 +75,14 @@
         <div class="turnero">
           <h3>Solicitá tu Turno</h3>
           <!-- Turnero -->
-          <form action="#" method="get">
+          <form action="#" method="get" class="formTurno">
             <input
               type="text"
               name="nombre"
               placeholder="Nombre y Apellido"
               required
             />
+            <br><br>
             <input
               type="text"
               name="nombrePaciente"
@@ -90,6 +91,7 @@
             />
             <br /><br />
             <input type="tel" name="Telefono" placeholder="Telefono" required />
+            <br><br>
             <input type="email" name="e-mail" placeholder="E-mail" required />
             <br /><br />
             <select name="tipoDeConsulta" required>
@@ -100,6 +102,7 @@
               <option value="traumato">Consulta traumatologica</option>
               <option value="pelu">Peluqueria</option>
             </select>
+            <br><br>
             <input type="datetime-local" name="dia&hora" required />
             <br /><br />
             <input
@@ -135,7 +138,7 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Consultas de medicas y de rutina, analisis clinicos.
+                Consultas medicas y de rutina, analisis clinicos.
               </div>
             </div>
           </div>

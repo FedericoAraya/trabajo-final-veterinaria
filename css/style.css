@@ -336,7 +336,8 @@
       background-color: #b9d7d9; }
     .mainTurnos .descripcion .accordion .accordion-button {
       background-color: #b9d7d9;
-      border: solid 2px #b8b8b8; }
+      border: solid 2px #b8b8b8;
+      text-align: left; }
 
 @media (min-width: 768px) {
   .mainTurnos img {
