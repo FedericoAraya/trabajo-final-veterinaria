@@ -1,5 +1,5 @@
 /* header */
-.header {
+.header { 
   display: flex;
   align-items: center;
   position: sticky;
@@ -15,7 +15,7 @@
     background: $colorHeader;
     justify-content: flex-start;
     align-items: center;
-    padding-right: 100px;
+    padding-right: 50px;
     img {
       width: 80px;
       height: auto;
@@ -51,7 +51,7 @@
       color: white;
       border-bottom: 1px solid #cbdfdf;
       display: block;
-      padding: 10px 20px;
+      padding: 10px 10px;
       background: $colorLogo;
       font-variant: small-caps;
       z-index: 10;
@@ -130,7 +130,7 @@
       a {
         color: $colorLogo;
         display: flex;
-        padding: 0px 10px;
+        padding: 0px 8px;
         background: transparent;
         font-size: large;
         font-weight: bold;
@@ -144,8 +144,12 @@
       }
       .cruz {
         display: none;
-      }
-
+      } 
+      input[type="checkbox"] {        
+        &:checked ~ nav {
+          display: flex;
+        }
+        }     
       .nav {
         display: flex;
         flex-wrap: wrap;
