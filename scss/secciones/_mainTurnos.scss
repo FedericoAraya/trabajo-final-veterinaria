@@ -15,10 +15,17 @@
       width: 100%;
       padding: 20px;
     }
+    .formTurno{
+    @extend %formulario;
+    
+    .itamTurno{
+      width: 100%;
+    }
     .enviarTurno {
       padding: 3px 6px;
     }
   }
+}
   /* descripcion turnos */
   .descripcion {
     img {

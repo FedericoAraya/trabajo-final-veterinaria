@@ -31,12 +31,16 @@
     h3 {
       @extend %titulo;
     }
+    .inpConsulta {
+      @extend %formulario;
+    }
   }
   //mapa
   .gridMapa {
     width: 100%;
     grid-area: mapa;
     margin: 20px;
+    align-self: center;
     .mapa {
       width: 100%;
       height: 350px;

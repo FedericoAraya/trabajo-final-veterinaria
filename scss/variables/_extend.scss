@@ -12,9 +12,9 @@
     background-color: $colorLogo;
     font-size: large;
     color: $colorFondo;
-    text-shadow: -1px 1px #030303;
-    
+    text-shadow: -1px 1px #030303;  
 }
+
 %subIndice{
     font-size: smaller;
     color: black;
@@ -25,6 +25,13 @@
     text-align: center;
     font-weight: 700;
     font-size: xx-large;
+ }
+ %formulario{
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
  }
 
  @mixin tituloSecundario ($tamanioTitulo) {

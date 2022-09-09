@@ -44,12 +44,14 @@
               <a
                 href="https://api.whatsapp.com/send/?phone=543513415071&text&type=phone_number&app_absent=0"
                 target="_blank"
-                ><img src="../imagenes/whatsapp.png" alt="logo whatsapp"> Whatsapp</a
+                ><img src="../imagenes/whatsapp.png" alt="logo whatsapp" />
+                Whatsapp</a
               >
               <a
                 href="https://instagram.com/centrovetbolivar?igshid=YmMyMTA2M2Y"
                 target="_blank"
-                ><img src="../imagenes/instagram.png" alt="logo instagram"> Instagram</a
+                ><img src="../imagenes/instagram.png" alt="logo instagram" />
+                Instagram</a
               >
             </li>
           </ul>
@@ -90,7 +92,12 @@
       <!-- Formulario -->
       <div class="formConsulta">
         <h3>Consulta:</h3>
-        <form action="#" method="get">
+        <form
+        class="inpConsulta"
+          action="https://formspree.io/f/meqdevkd"
+          target="_blank"
+          method="POST"
+        >
           <input
             type="text"
             name="Nombre"
@@ -100,14 +107,15 @@
           <br /><br />
           <input type="tel" name="Telefono" placeholder="Telefono" required />
           <br /><br />
-          <input type="email" name="e-mail" placeholder="E-mail" required />
+          <input type="email" name="email" placeholder="E-mail" required />
           <br /><br />
-          <textarea name="mensaje" required> Hola, me gustaria saber </textarea>
+          <textarea name="message" required> Hola, me gustaria saber </textarea>
           <br /><br />
           <div>Desea recibir informacion?</div>
           <input type="checkbox" name="recibirInfo" id="1" />
           <br /><br />
-          <input type="submit" type="reset" value="enviar" />
+          <input class="enviarTurno" type="submit" value="Enviar" />
+          <input class="enviarTurno" type="reset" value="Limpiar formulario" />
         </form>
       </div>
       <!-- Mapa -->
