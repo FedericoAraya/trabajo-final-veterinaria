@@ -1,18 +1,13 @@
 .mainInicio {
+  min-height: 90vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: $colorFondo;
   /* nosotros */
   .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
     width: 100%;
     .nosotrosTexto {
       width: 80vw;
-      margin-bottom: 20px;
       h3 {
         @extend %titulo;
       }
@@ -32,9 +27,9 @@
         }
       }
       .carousel-caption {
-right: 0%;
-left: 60%;
-bottom: 0;
+        right: 0%;
+        left: 60%;
+        bottom: 0;
         p {
           @extend %estiloParrafoLigth;
           border-radius: 10px 0px 0px 10px;
@@ -44,15 +39,10 @@ bottom: 0;
   }
   /* notas */
   .notas {
-    display: flex;
-    flex-direction: column;
     h4 {
       @extend %titulo;
     }
     .notasVideos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       iframe {
         width: 80vw;
         margin: 20px;
@@ -61,19 +51,3 @@ bottom: 0;
   }
 }
 
-@media (min-width: 768px) {
-  /* nosotros */
-  .mainInicio {
-    .nosotrosTexto {
-      p {
-        display: none;
-      }
-    }
-    .notas {
-      .notasVideos {
-        /* notas */
-        flex-direction: row;
-      }
-    }
-  }
-}

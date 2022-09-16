@@ -30,8 +30,13 @@
   display: grid;
   grid-template-columns: max-content;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   padding: 5px; }
+  .mainTurnos .turnos .formTurno input, .mainContacto .formConsulta .inpConsulta input {
+    padding: 2px; }
+    .mainTurnos .turnos .formTurno input:hover, .mainContacto .formConsulta .inpConsulta input:hover {
+      border: solid 2px #026b71;
+      border-radius: 3px; }
 
 /* reseteo */
 * {
@@ -206,21 +211,16 @@
     transform: scale(1.1); }
 
 .mainInicio {
+  min-height: 90vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #d7ebec;
   /* nosotros */
   /* notas */ }
   .mainInicio .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
     width: 100%; }
     .mainInicio .nosotros .nosotrosTexto {
-      width: 80vw;
-      margin-bottom: 20px; }
+      width: 80vw; }
     .mainInicio .nosotros .carousel {
       width: 100%;
       height: 50vh; }
@@ -235,35 +235,16 @@
         bottom: 0; }
         .mainInicio .nosotros .carousel .carousel-caption p {
           border-radius: 10px 0px 0px 10px; }
-  .mainInicio .notas {
-    display: flex;
-    flex-direction: column; }
-    .mainInicio .notas .notasVideos {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .mainInicio .notas .notasVideos iframe {
-        width: 80vw;
-        margin: 20px; }
-
-@media (min-width: 768px) {
-  /* nosotros */
-  .mainInicio .nosotrosTexto p {
-    display: none; }
-  .mainInicio .notas .notasVideos {
-    /* notas */
-    flex-direction: row; } }
+  .mainInicio .notas .notasVideos iframe {
+    width: 80vw;
+    margin: 20px; }
 
 /* servicios */
 .mainServicios {
-  display: flex;
-  flex-direction: column;
+  min-height: 90vh;
   background-color: #d7ebec;
   /* galeria servicios */ }
   .mainServicios .galeriaServicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     padding: 0px 25px 25px 25px; }
     .mainServicios .galeriaServicios img {
@@ -271,9 +252,6 @@
     .mainServicios .galeriaServicios .card {
       background-color: #b9d7d9;
       width: 100%; }
-      .mainServicios .galeriaServicios .card .card-reverse {
-        display: flex;
-        flex-direction: column-reverse; }
       .mainServicios .galeriaServicios .card .card-title {
         font-size: 25px; }
     .mainServicios .galeriaServicios .animate__animated {
@@ -283,28 +261,16 @@
   /* galeria servicios */
   .mainServicios .galeriaServicios .card img {
     max-height: 300px;
-    object-fit: cover; }
-  .mainServicios .galeriaServicios .card .card-reverse {
-    display: flex;
-    flex-direction: row; } }
+    object-fit: cover; } }
 
 .mainInstalaciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 90vh;
   background-color: #d7ebec;
   width: 100%;
   /* nuestras instalaciones */ }
   .mainInstalaciones .nuestrasInstalaciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
     width: 80vw; }
   .mainInstalaciones .galeriaInstalaciones {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     padding: 20px;
     justify-content: space-evenly; }
     .mainInstalaciones .galeriaInstalaciones .card {
@@ -316,37 +282,33 @@
         z-index: 4; }
 
 .mainTurnos {
-  display: flex;
-  flex-direction: column;
+  min-height: 90vh;
   background-color: #d7ebec;
   /* turnero */
   /* descripcion turnos */ }
-  .mainTurnos .turnos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    .mainTurnos .turnos img {
-      width: 100%;
-      padding: 20px; }
-    .mainTurnos .turnos .formTurno .itemTurno {
-      width: 100%; }
-    .mainTurnos .turnos .formTurno .enviarTurno {
-      padding: 3px 6px; }
+  .mainTurnos .turnos img {
+    width: 100%; }
+  .mainTurnos .turnos .formTurno .itemTurno {
+    width: 100%; }
+  .mainTurnos .turnos .formTurno .enviarTurno {
+    padding: 3px 6px; }
   .mainTurnos .descripcion img {
-    width: 100%;
-    padding: 20px; }
+    width: 100%; }
   .mainTurnos .descripcion h3 button {
-    font-size: 3vh;
-    margin: 0; }
-  .mainTurnos .descripcion .accordion {
-    margin: 30px; }
-    .mainTurnos .descripcion .accordion .accordion-item {
-      background-color: #b9d7d9; }
-    .mainTurnos .descripcion .accordion .accordion-button {
-      background-color: #b9d7d9;
-      border: solid 2px #b8b8b8;
-      text-align: left; }
+    font-size: 3vh; }
+  .mainTurnos .descripcion .accordion .accordion-item {
+    background-color: #b9d7d9; }
+  .mainTurnos .descripcion .accordion .accordion-body {
+    background-color: #d7ebec; }
+  .mainTurnos .descripcion .accordion .accordion-button {
+    background-color: #b9d7d9;
+    border: solid 2px #b8b8b8;
+    text-align: left; }
+    .mainTurnos .descripcion .accordion .accordion-button:focus {
+      box-shadow: none; }
+    .mainTurnos .descripcion .accordion .accordion-button:hover {
+      border-color: #026b71;
+      font-size: 18px; }
 
 @media (min-width: 768px) {
   .mainTurnos img {
@@ -356,6 +318,7 @@
 
 /* main contacto */
 .mainContacto {
+  min-height: 90vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -378,12 +341,13 @@
     margin: 20px; }
   .mainContacto .gridMapa {
     width: 100%;
+    height: 100%;
     grid-area: mapa;
     margin: 20px;
     align-self: center; }
     .mainContacto .gridMapa .mapa {
       width: 100%;
-      height: 350px;
+      height: inherit;
       padding: 30px; }
 
 @media (min-width: 768px) {
@@ -403,14 +367,8 @@
 
 /* footer */
 .footer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
   background-color: #b9d7d9;
   width: 100%;
-  overflow: hidden;
-  padding: 15px;
   position: relative;
   z-index: 8;
   /* redes sociales */
@@ -421,17 +379,11 @@
     height: 30px;
     width: 30px;
     margin: 3px 10px; }
-  .footer .dc {
-    display: flex;
-    align-items: center; }
-    .footer .dc img {
-      width: 60px;
-      height: 80px; }
-    .footer .dc h6 {
-      font-size: 12px; }
+  .footer .dc img {
+    width: 60px; }
+  .footer .dc h6 {
+    font-size: 12px; }
 
 @media (min-width: 768px) {
-  .footer {
-    flex-direction: row; }
-    .footer p {
-      margin: 0; } }
+  .footer p {
+    margin: 0; } }

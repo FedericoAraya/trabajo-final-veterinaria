@@ -1,40 +1,47 @@
-%estiloParrafo{
-    text-align: center;
-    font-size: large;
-    color: black;
-    align-content:flex-start;
+%estiloParrafo {
+  text-align: center;
+  font-size: large;
+  color: black;
+  align-content: flex-start;
 }
-%estiloParrafoLigth{
-    text-align: left;
-    padding: 10px;
-    margin: 0;
-    width: auto;
-    background-color: $colorLogo;
-    font-size: large;
-    color: $colorFondo;
-    text-shadow: -1px 1px #030303;  
+%estiloParrafoLigth {
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  width: auto;
+  background-color: $colorLogo;
+  font-size: large;
+  color: $colorFondo;
+  text-shadow: -1px 1px #030303;
 }
 
-%subIndice{
-    font-size: smaller;
-    color: black;
+%subIndice {
+  font-size: smaller;
+  color: black;
 }
- %titulo{
-    color: $colorLogo;
-    margin: 20px;
-    text-align: center;
-    font-weight: 700;
-    font-size: xx-large;
- }
- %formulario{
-    display: grid;
-    grid-template-columns: max-content;
-    justify-content: center;
-    gap: 5px;
-    padding: 5px;
- }
+%titulo {
+  color: $colorLogo;
+  margin: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+}
+%formulario {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  input{
+    padding: 2px;
+    &:hover{
+      border: solid 2px $colorLogo;
+      border-radius: 3px;
+    }
+}
+}
 
- @mixin tituloSecundario ($tamanioTitulo) {
-    @extend %titulo;
-    font-size: $tamanioTitulo;
- }
+@mixin tituloSecundario($tamanioTitulo) {
+  @extend %titulo;
+  font-size: $tamanioTitulo;
+}

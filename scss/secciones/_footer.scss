@@ -1,13 +1,7 @@
 /* footer */
 .footer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
   background-color: $colorHeader;
   width: 100%;
-  overflow: hidden;
-  padding: 15px;
   position: relative;
   z-index: 8;
   p {
@@ -25,11 +19,8 @@
   }
   /* director clínico */
   .dc {
-    display: flex;
-    align-items: center;
     img {
-      width: 60px;
-      height: 80px;
+      width: 60px;     
     }
     h6 {
       @include tituloSecundario(12px);
@@ -39,7 +30,6 @@
 }
 @media (min-width: 768px) {
   .footer {
-    flex-direction: row;
     p{
       margin: 0;
     }
