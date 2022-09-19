@@ -247,6 +247,15 @@
         height: 50vh;
         object-fit: cover;
         object-position: 70% 50%; }
+      .mainInicio .nosotros .carousel .carousel-control-next-icon,
+      .mainInicio .nosotros .carousel .carousel-control-prev-icon {
+        height: 50px;
+        background-color: #026b71be;
+        border-radius: 20px; }
+      .mainInicio .nosotros .carousel .carousel-indicators button {
+        background-color: #026b71;
+        border-radius: 5px;
+        height: 5px; }
       .mainInicio .nosotros .carousel .carousel-caption {
         right: 0%;
         left: 60%;
@@ -329,10 +338,14 @@
       font-size: 18px; }
 
 @media (min-width: 768px) {
-  .mainTurnos img {
+  .mainTurnos .turnos img {
     max-height: 400px;
     object-fit: cover;
-    object-position: 0px 40%; } }
+    object-position: 0px 40%; }
+  .mainTurnos .descripcion img {
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 0px 60%; } }
 
 /* main contacto */
 .mainContacto {

@@ -26,6 +26,19 @@
           object-position: 70% 50%;
         }
       }
+      .carousel-control-next-icon,
+      .carousel-control-prev-icon {
+        height: 50px;
+        background-color: #026b71be;
+        border-radius: 20px;
+      }
+      .carousel-indicators {
+        button {
+          background-color: #026b71;
+          border-radius: 5px;
+          height: 5px;
+        }
+      }
       .carousel-caption {
         right: 0%;
         left: 60%;
