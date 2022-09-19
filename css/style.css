@@ -353,7 +353,7 @@
     .mainContacto .horario td {
       font-size: 3vw;
       padding: 3px 10px;
-      border: 3px solid black; }
+      border: 3px solid #026b71; }
   .mainContacto .formConsulta {
     grid-area: formulario;
     margin: 20px; }
@@ -381,7 +381,7 @@
     .mainContacto .horario td {
       font-size: 15px;
       padding: 3px 10px;
-      border: 3px solid black; } }
+      border: 3px solid #026b71; } }
 
 /* footer */
 .footer {
