@@ -193,6 +193,8 @@
       display: none; }
     .header .respmenu input[type="checkbox"]:checked ~ nav {
       display: flex; }
+    .header .respmenu input[type="checkbox"]:checked ~ .fondoOpaco {
+      display: none; }
     .header .respmenu .nav {
       display: flex;
       flex-wrap: wrap;

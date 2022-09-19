@@ -102,7 +102,7 @@
       &:not(:checked) ~ .cruz {
         display: none;
       }
-    }  
+    }
     .fondoOpaco {
       display: none;
       position: absolute;
@@ -112,7 +112,7 @@
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.534);
-    } 
+    }
     .nav {
       display: none;
       position: absolute;
@@ -122,7 +122,7 @@
       height: auto;
       background-color: $colorLogo;
       border-bottom-left-radius: 10px;
-      
+
       ul {
         list-style-type: none;
 
@@ -177,6 +177,9 @@
       input[type="checkbox"] {
         &:checked ~ nav {
           display: flex;
+        }
+        &:checked ~ .fondoOpaco {
+          display: none;
         }
       }
       .nav {
