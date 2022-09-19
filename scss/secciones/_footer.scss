@@ -15,22 +15,20 @@
       width: 30px;
       margin: 3px 10px;
     }
-   
   }
   /* director clínico */
   .dc {
     img {
-      width: 60px;     
+      width: 60px;
     }
     h6 {
       @include tituloSecundario(12px);
-
     }
   }
 }
 @media (min-width: 768px) {
   .footer {
-    p{
+    p {
       margin: 0;
     }
   }

@@ -9,17 +9,17 @@
     img {
       width: 100%;
     }
-    .formTurno{
-    @extend %formulario;
-        
-    .itemTurno{
-      width: 100%;
-    }
-    .enviarTurno {
-      padding: 3px 6px;
+    .formTurno {
+      @extend %formulario;
+
+      .itemTurno {
+        width: 100%;
+      }
+      .enviarTurno {
+        padding: 3px 6px;
+      }
     }
   }
-}
   /* descripcion turnos */
   .descripcion {
     img {
@@ -42,10 +42,10 @@
         background-color: $colorHeader;
         border: solid 2px #b8b8b8;
         text-align: left;
-        &:focus{
+        &:focus {
           box-shadow: none;
         }
-        &:hover{
+        &:hover {
           border-color: $colorLogo;
           font-size: 18px;
         }

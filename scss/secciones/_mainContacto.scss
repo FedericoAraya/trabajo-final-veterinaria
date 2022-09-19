@@ -23,7 +23,6 @@
       font-size: 3vw;
       padding: 3px 10px;
       border: 3px solid black;
-      
     }
   }
   /* consulta */
@@ -34,7 +33,7 @@
       @extend %titulo;
     }
     .inpConsulta {
-      @extend %formulario;     
+      @extend %formulario;
     }
   }
   //mapa
