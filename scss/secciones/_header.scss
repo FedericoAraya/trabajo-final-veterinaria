@@ -1,5 +1,5 @@
 /* header */
-.header { 
+.header {
   display: flex;
   align-items: center;
   position: sticky;
@@ -32,6 +32,9 @@
     }
     a {
       text-decoration: none;
+      &:hover {
+        transform: scale(1, 1);
+      }
     }
   }
   /* navbar */
@@ -46,7 +49,7 @@
     background: $colorHeader;
     height: 90px;
     width: 25vw;
-    z-index: 10;
+    z-index: 8;
     a {
       color: white;
       border-bottom: 1px solid #cbdfdf;
@@ -56,7 +59,9 @@
       font-variant: small-caps;
       z-index: 10;
       text-decoration: none;
-      
+      &:hover {
+        transform: scale(1, 1);
+      }
     }
     .menu {
       font-size: 48px;
@@ -88,13 +93,26 @@
       &:checked ~ nav {
         display: block;
       }
+      &:checked ~ .fondoOpaco {
+        display: block;
+      }
       &:checked ~ .menu {
         display: none;
       }
       &:not(:checked) ~ .cruz {
         display: none;
       }
-    }
+    }  
+    .fondoOpaco {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 90px;
+      z-index: 9;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.534);
+    } 
     .nav {
       display: none;
       position: absolute;
@@ -104,21 +122,23 @@
       height: auto;
       background-color: $colorLogo;
       border-bottom-left-radius: 10px;
+      
       ul {
         list-style-type: none;
-      }
-      .small {
-        display: flex;
-        margin-top: auto;
-        a {
+
+        .small {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          font-size: 12px;
-          img{
-            width: 25px;
-            padding-right: 5px;
-            filter: invert(1);
+          margin-top: auto;
+          a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 12px;
+            img {
+              width: 25px;
+              padding-right: 5px;
+              filter: invert(1);
+            }
           }
         }
       }
@@ -143,7 +163,7 @@
         background: transparent;
         font-size: large;
         font-weight: bold;
-        border: none;       
+        border: none;
       }
       .active {
         text-decoration: underline;
@@ -153,12 +173,12 @@
       }
       .cruz {
         display: none;
-      } 
-      input[type="checkbox"] {        
+      }
+      input[type="checkbox"] {
         &:checked ~ nav {
           display: flex;
         }
-        }     
+      }
       .nav {
         display: flex;
         flex-wrap: wrap;
@@ -178,6 +198,11 @@
           right: 0;
           .small {
             display: none;
+          }
+          li {
+            &:hover {
+              transform: scale(1.1);
+            }
           }
         }
       }

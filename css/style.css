@@ -10,10 +10,9 @@
   padding: 10px;
   margin: 0;
   width: auto;
-  background-color: #026b71;
+  background-color: #026b71b6;
   font-size: large;
-  color: #d7ebec;
-  text-shadow: -1px 1px #030303; }
+  color: white; }
 
 .footer p {
   font-size: smaller;
@@ -78,6 +77,8 @@
       line-height: 1; }
     .header .logo a {
       text-decoration: none; }
+      .header .logo a:hover {
+        transform: scale(1, 1); }
   .header .respmenu {
     display: flex;
     color: white;
@@ -89,7 +90,7 @@
     background: #b9d7d9;
     height: 90px;
     width: 25vw;
-    z-index: 10; }
+    z-index: 8; }
     .header .respmenu a {
       color: white;
       border-bottom: 1px solid #cbdfdf;
@@ -99,6 +100,8 @@
       font-variant: small-caps;
       z-index: 10;
       text-decoration: none; }
+      .header .respmenu a:hover {
+        transform: scale(1, 1); }
     .header .respmenu .menu {
       font-size: 48px;
       pointer-events: none;
@@ -126,10 +129,21 @@
       top: 0; }
       .header .respmenu input[type="checkbox"]:checked ~ nav {
         display: block; }
+      .header .respmenu input[type="checkbox"]:checked ~ .fondoOpaco {
+        display: block; }
       .header .respmenu input[type="checkbox"]:checked ~ .menu {
         display: none; }
       .header .respmenu input[type="checkbox"]:not(:checked) ~ .cruz {
         display: none; }
+    .header .respmenu .fondoOpaco {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 90px;
+      z-index: 9;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.534); }
     .header .respmenu .nav {
       display: none;
       position: absolute;
@@ -141,18 +155,18 @@
       border-bottom-left-radius: 10px; }
       .header .respmenu .nav ul {
         list-style-type: none; }
-      .header .respmenu .nav .small {
-        display: flex;
-        margin-top: auto; }
-        .header .respmenu .nav .small a {
+        .header .respmenu .nav ul .small {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          font-size: 12px; }
-          .header .respmenu .nav .small a img {
-            width: 25px;
-            padding-right: 5px;
-            filter: invert(1); }
+          margin-top: auto; }
+          .header .respmenu .nav ul .small a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 12px; }
+            .header .respmenu .nav ul .small a img {
+              width: 25px;
+              padding-right: 5px;
+              filter: invert(1); }
 
 @media (min-width: 768px) {
   /* navbar */
@@ -197,7 +211,9 @@
         position: relative;
         right: 0; }
         .header .respmenu .nav ul .small {
-          display: none; } }
+          display: none; }
+        .header .respmenu .nav ul li:hover {
+          transform: scale(1.1); } }
 
 /* logo whatsapp */
 .logoFlotanteWapp {
